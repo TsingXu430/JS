@@ -1,0 +1,17 @@
+
+
+<script type="text/javascript">
+function goForward(){
+	window.history.forward();
+}
+function goBack(){
+	window.history.back();
+}
+</script>
+</head>
+<body>
+<input type="button" value="forward" onClick="goForward()">
+<input type="button" value="back" onClick="goBack()">
+</body>
+
+
