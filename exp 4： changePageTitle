@@ -1,0 +1,15 @@
+
+
+
+<script type="text/javascript">
+function changeTitle(){
+	 var newTitle = document.getElementById("newTitle").value;
+	 document.title = newTitle;
+}
+</script>
+</head>
+<body>
+<input type="text" name="newTitle" id="newTitle" value="" />
+<input type="button" value="submit" onClick="changeTitle()" />
+</body>
+
