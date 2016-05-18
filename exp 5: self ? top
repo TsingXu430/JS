@@ -1,0 +1,9 @@
+
+//判断网页是否被放入框架中
+//如果网页是直接在窗口中打开，而非框架，则top变量等同于window对象，也等同于self对象。
+//所以，top和self是否相等，作为网页是否在一个框架中打开的判断标准
+
+if(self!=top){
+	top.location.href=self.location.href;
+}
+
