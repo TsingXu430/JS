@@ -1,0 +1,17 @@
+
+
+<script type="text/javascript">
+function loadJs(){
+	var theHead = document.getElementsByTagName("head").item(0);
+	var myScript = document.createElement("script");
+	myScript.src="./myjs.js";
+	myScript.type="text/javascript";
+	myScript.defer=true;
+	theHead.appendChild(myScript);
+}
+</script>
+</head>
+<body>
+<input type="button" value="loadJs" onClick="loadJs()" />
+</body>
+
