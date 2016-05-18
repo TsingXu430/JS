@@ -1,2 +1,1 @@
-Git is a version control system.
-Git is free software.
+《javascript 网页特效经典300例》
