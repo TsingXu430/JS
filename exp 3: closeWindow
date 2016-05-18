@@ -1,0 +1,16 @@
+
+
+//经过测试，chrome中无法通过close()方法关闭非弹出式窗口。在IE中可以正常关闭。
+
+
+<script type="text/javascript">
+function closeWin(){
+	window.close();
+}
+</script>
+</head>
+<body>
+<input type="button" value="close" onClick="closeWin()">
+</body>
+
+
