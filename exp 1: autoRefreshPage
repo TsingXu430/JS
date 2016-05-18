@@ -1,3 +1,5 @@
+
+
 //刷新网页函数
 //reload()函数是刷新当前页面。
 //setTimeout函数属于window对象，也是顶层对象。
@@ -7,3 +9,4 @@ function fresh(){
 	window.location.reload();
 }
 setTimeout('fresh()',5000);  //5秒刷新一次;
+
