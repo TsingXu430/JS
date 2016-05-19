@@ -9,7 +9,7 @@
 function posRightCorner(){
 	ad.style.top=(document.body.scrollTop + document.body.clientHeight-60)+"px";
 	ad.style.left=(document.body.scrollLeft + document.body.clientWidth-100)+"px";
-	t = setTimeout("posRightCorner();",2000);
+	t = setTimeout("posRightCorner();",100);
 	console.log(ad.style.top);
 }
 function closeAD(){
