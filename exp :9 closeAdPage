@@ -17,7 +17,8 @@ function closeAD(){
 	clearTimeout(t);
 }
 window.onload = function(){
-	var ad = document.getElementById("ad");
+
+var ad=document.getElementbyId("ad");
 	var t;
 	posRightCorner();
 }
