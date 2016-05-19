@@ -1,0 +1,38 @@
+
+
+
+//书中代码有缺陷，以下是我改进的。
+
+<script type="text/javascript">
+//clientHeight:浏览器可视区域的高度
+//scrollTop:滚动时，上面被遮住的高度
+function posRightCorner(){
+	ad.style.top=(document.body.scrollTop + document.body.clientHeight-60)+"px";
+	ad.style.left=(document.body.scrollLeft + document.body.clientWidth-100)+"px";
+	t = setTimeout("posRightCorner();",2000);
+	console.log(ad.style.top);
+}
+function closeAD(){
+	ad.style.display="none";
+	clearTimeout(t);
+}
+window.onload = function(){
+	var ad = document.getElementById("ad");
+	var t;
+	posRightCorner();
+}
+</script>
+<style type="text/css">
+html,body{
+	height:100%;
+}
+</style>
+</head>
+<body>
+<div id="ad" style=" width:100px; height:50px; background:#CCC; z-index:9999; border:1px solid #666; position:absolute;">
+  <a onClick="closeAD()" style=" cursor:pointer;">X</a>
+  <div>Hello World!</div>
+</div>
+</body>
+
+
