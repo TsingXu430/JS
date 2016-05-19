@@ -1,0 +1,24 @@
+
+
+//加入收藏夹功能
+<script type="text/javascript">
+function addFav(){
+	var title = document.title;
+	var url = document.URL;
+	try{
+		window.external.addFavorite(url,title);
+	}catch(e){
+		try{
+			window.sidebar.addPanel(title,url,"");
+		}catch(e){
+			alert("加入收藏失败,请使用CTRL+D进行添加");
+		}
+	}
+}
+</script>
+</head>
+<body>
+<a href="http://www.addFav.com" title="javascript300实例" onClick="addFav()">单击加入收藏夹</a>
+</body>
+
+
