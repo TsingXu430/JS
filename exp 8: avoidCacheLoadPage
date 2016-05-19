@@ -1,0 +1,24 @@
+
+//每次读取都是按照新的url来读取新的信息。
+
+<script type="text/javascript">
+function myOnload(){
+	var links = document.getElementsByTagName("a");
+	for(var i=0;i<links.length;i++){
+		var link =links[i];
+		var href = link.href;
+		if(href.indexOf("?") >-1){
+			href += "&time=" + new Date().getTime();
+		}else{
+			href += "?time=" + new Date().getTime();
+		}
+		link.href=href;
+	}
+}
+window.onload=myOnload;
+</script>
+</head>
+<body>
+<a href="a.html">链接一</a>
+<a href="b.html">链接二</a>
+</body>
